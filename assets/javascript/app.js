@@ -3,15 +3,16 @@ $(document).ready(function(){
 // ----------------------------------------------------------------
  // declaring the value for the timer to 60 seconds
  // hide the start button and rules
-  	var number = 50;
+  	var number = 60;
   	alert("Start Trivia Game");
+    //
     $("#start-button").on("click", start);  // starts the games 
     $("#submit").on("click", finish);  // submits answers and finishes the game
     $("#restart").on("click", restart);  // restarts the games 
 // ----------------------------------------------------------------
 // functions
     function start(){
-    	counter = setInterval(timer, 1000);
+    	counter = setInterval(timer, 1200);
     	showMe(".question");
     	showMe(".answers");
     	showMe("#submit");
@@ -21,29 +22,29 @@ $(document).ready(function(){
 	    hideMe("#results");
     }
     function timer(){
-      number-- // decrements the timer by 1
+      number--       
       $("#show-number").html("<h2>" + number + "</h2>" );
       if (number === 0){
         alert("Times Up!")
-        stop(); // calls the stop function
+        stop();
       }
     }
     function stop(){
-    	clearInterval(counter); // stops the timer
+    	clearInterval(counter); 
     	$("#results").show();
     	$("#restart").show();
-		$(".question").hide();
-		$(".answers").hide();
-		$("#submit").hide();
+		  $(".question").hide();
+		  $(".answers").hide();
+		  $("#submit").hide();
     }
     function finish(){
-    	number = 1; // if number is equal to 0 number will show -1 so 1 has to be selected
-    	clearInterval(counter); // stops the timer
+    	number = 1; 
+    	clearInterval(counter); 
     	timer();
     }
 
     function restart(){
-    	number = 50;
+    	number = 60;
     	start();
     }
 
@@ -53,9 +54,6 @@ $(document).ready(function(){
     function showMe(e) {
     	$(e).show();
     }
-
-// ----------------------------------------------------------------
-//calling functions
-  	start(); // calls the start function
+  	start(); 
   });
 });

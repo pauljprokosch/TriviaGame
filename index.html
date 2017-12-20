@@ -6,6 +6,10 @@
   <!-- CSS Files -->
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </head>
 <body>
   <header id="masthead">
@@ -16,61 +20,53 @@
   <div id="main-container" class="container">
     <section class="main-section">
       <h1 class="rules">The Rules</h1>
-      <p class="rules">You have 50 seconds to answer all 4 questions.</p>
+      <p class="rules">You have 60 seconds to answer all 5 questions.</p>
       <h2>
         <button type="button" id="start-button">Start</button>
       </h2>
-      <!-- timer will be displayed in div#show-number-->
-      <div id="show-number"></div>
-      <!-- question 1 -->
-      <p class="question">1. If there is a basket of 13 apples and you take three of them, how many apples do you have?</p>
+          <div id="show-number"></div>
+      <!-- Q1 -->
+      <p class="question">1. What is the square root of 49?</p>
       <ul class="answers">
-      <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">10</label><br/>
-      <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">1</label><br/>
-      <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">16</label><br/>
+      <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">7</label><br/>
+      <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">5</label><br/>
+      <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">4</label><br/>
       <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">3</label><br/>
       </ul>
-      <!-- question 2 -->
-      <p class="question">2. How many 2-cent stamps does it take to make a dozen?</p>
+      <!-- Q2 -->
+      <p class="question">2. How many states are there in India?</p>
       <ul class="answers">
       <input type="radio" name="q2" value="a" id="q2a"><label for="q2a">0</label><br/>
       <input type="radio" name="q2" value="b" id="q2b"><label for="q2b">6</label><br/>
-      <input type="radio" name="q2" value="c" id="q2c"><label for="q2c">12</label><br/>
-      <input type="radio" name="q2" value="d" id="q2d"><label for="q2d">0</label><br/>
+      <input type="radio" name="q2" value="c" id="q2c"><label for="q2c">20</label><br/>
+      <input type="radio" name="q2" value="d" id="q2d"><label for="q2d">26</label><br/>
       </ul>
-      <!-- question 3 -->
-      <p class="question">3. Mary’s father has 5 daughters – Nana, Nene, Nini, Nono. What is the fifth daughters name</p>
+      <!-- Q3 -->
+      <p class="question">3. How many countries are there in the world</p>
       <ul class="answers">
-      <input type="radio" name="q3" value="a" id="q3a"><label for="q3a">Nini</label><br/>
-      <input type="radio" name="q3" value="b" id="q3b"><label for="q3b">Nene</label><br/>
-      <input type="radio" name="q3" value="c" id="q3c"><label for="q3c">Mary</label><br/>
-      <input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Nono</label><br/>
+      <input type="radio" name="q3" value="a" id="q3a"><label for="q3a">200</label><br/>
+      <input type="radio" name="q3" value="b" id="q3b"><label for="q3b">250</label><br/>
+      <input type="radio" name="q3" value="c" id="q3c"><label for="q3c">255</label><br/>
+      <input type="radio" name="q3" value="d" id="q3d"><label for="q3d">268</label><br/>
       </ul>
-      <!-- question 4 -->
-      <p class="question">4. What travels around the world but stays in one spot?</p>
+      <!-- Q4 -->
+      <p class="question">4. What is the number one selling product at WalMart?</p>
       <ul class="answers">
-      <input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Air</label><br/>
-      <input type="radio" name="q4" value="b" id="q4b"><label for="q4b">Stamp</label><br/>
-      <input type="radio" name="q4" value="c" id="q4c"><label for="q4c">Time</label><br/>
-      <input type="radio" name="q4" value="d" id="q4d"><label for="q4d">Birds</label><br/>
+      <input type="radio" name="q4" value="a" id="q4a"><label for="q4a">light bulbs</label><br/>
+      <input type="radio" name="q4" value="b" id="q4b"><label for="q4b">bananas</label><br/>
+      <input type="radio" name="q4" value="c" id="q4c"><label for="q4c">apples</label><br/>
+      <input type="radio" name="q4" value="d" id="q4d"><label for="q4d">oranges</label><br/>
       </ul>
-      <!-- question 5 -->
-      <p class="question">4. If you divide 14 by 1/2, what do you get?</p>
+      <!-- Q5 -->
+      <p class="question">5. Twenty times Twenty =?</p>
       <ul class="answers">
-      <input type="radio" name="q5" value="a" id="q5a"><label for="q5a">7</label><br/>
-      <input type="radio" name="q5" value="b" id="q5b"><label for="q5b">.50</label><br/>
-      <input type="radio" name="q5" value="c" id="q5c"><label for="q5c">2</label><br/>
-      <input type="radio" name="q5" value="d" id="q5d"><label for="q5d">28</label><br/>
+      <input type="radio" name="q5" value="a" id="q5a"><label for="q5a">40</label><br/>
+      <input type="radio" name="q5" value="b" id="q5b"><label for="q5b">400</label><br/>
+      <input type="radio" name="q5" value="c" id="q5c"><label for="q5c">4000</label><br/>
+      <input type="radio" name="q5" value="d" id="q5d"><label for="q5d">4</label><br/>
       </ul>
-      <!-- Hidden Buttons and Elements -->
-      <!-- Submit Button -->
       <button type="button" id="submit">Submit Final Answers</button>
-      <!-- Results -->
       <div id="results">
-      Show me the answers!
-        <!-- <div id="category1">
-        <p><strong>Question 1:</strong> The correct answer is the <strong>Answer 1</strong>.</p>
-        </div> -->
       </div>
       <button type="button" id="restart">Play Again</button>
     </section>
@@ -81,7 +77,10 @@
     </div>
   </footer>
   <!-- JavaScript File & jQuery Lib -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/javascript/app.js"></script>
   <script type="text/javascript" src="/js/questions.js"></script>
 </body>
